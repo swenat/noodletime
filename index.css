@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the container holding the image and navbar */
+.Upperpart {
+    position: relative; /* This allows the navbar to be positioned absolutely within this div */
+}
+
+/* Style for the image */
+.upperpartyellow {
+    width: 100%; /* Adjust width as needed */
+    height: auto; 
+}
+
+/* Style for the navbar */
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent; /* Semi-transparent background */
+    padding: 10px 0;
+    text-align: center; /* Center align the text links */
+}
+
+/* Style for the list within the navbar */
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; 
+    margin-right: 150px;
+    margin-top: 30px;
+}
+
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+
+.navbar ul li a {
+    color: black; 
+    text-decoration: none;
+    font-size: 16px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.navbar ul li a:hover {
+    color: white;
+}
