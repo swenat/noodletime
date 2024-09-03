@@ -1,31 +1,48 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Inter', sans-serif;
 }
 
-/* Style for the container holding the image and navbar */
+
 .Upperpart {
-    position: relative; /* This allows the navbar to be positioned absolutely within this div */
+    position: relative; 
 }
 
-/* Style for the image */
+
 .upperpartyellow {
-    width: 100%; /* Adjust width as needed */
+    width: 100%; 
     height: auto; 
 }
 
-/* Style for the navbar */
+.headline {
+    position: absolute;
+    top: 40%; 
+    left: 5%; 
+    transform: translateY(-50%); 
+    margin-left: 20px; 
+    font-size: 40px;
+    color: black; 
+    font-family: 'Pacifico', cursive; 
+}
+
+.highlight {
+    color: #FFD707; 
+}
+
+
+
 .navbar {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: transparent; /* Semi-transparent background */
+    background-color: transparent; 
     padding: 10px 0;
-    text-align: center; /* Center align the text links */
+    text-align: center; 
 }
 
-/* Style for the list within the navbar */
+
 .navbar ul {
     list-style: none;
     margin: 0;
