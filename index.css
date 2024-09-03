@@ -1,7 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Inder', sans-serif;
+    font-family: 'Oxygen';
+    overflow-x: hidden;
 }
 
 
@@ -11,6 +12,7 @@ body {
     align-items: center; 
     justify-content: center; 
     flex-direction: column;
+    width: 100%; 
 }
 
 
@@ -21,6 +23,7 @@ body {
     top: 0;
     left: 0;
 }
+
 
 .navbar {
     position: absolute;
@@ -78,7 +81,7 @@ body {
 }
 
 .headlinebody {
-    position:fixed;
+    position:absolute;
     z-index: 2; 
     text-align: left; 
     padding: 50px; 
@@ -103,21 +106,75 @@ body {
     font-family: 'Inder', sans-serif; 
     font-size: 18px;
     color: black;
-    margin-top: 20px;
-    max-width:500px; 
+    margin-top: 15px;
+    max-width:400px; 
 }
 
-.btn-yellow {
+.btn {
     color: white;
-    background-color: #FFD707;
     border: none;
     border-radius: 5px;
     height: auto;
     width: 130px;
-    font-family:5inder;
+    font-family:'Oxygen';
     padding-top: 5px;
     padding-bottom: 5px;
+
 }
+
+#btn-yellow {
+    background-color: #FFD707;
+}
+
+#btn-red {
+    background-color: #E35D61;
+}
+
+
+.h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.brownplate-image {
+    width: 30%; 
+    height: auto; 
+    margin-right: 20px; /* Lägg till marginal till höger om bilden */
+}
+
+.middlepart {
+    display: flex;
+    position: relative;
+    align-self: left;
+    align-items: left; /* Vertikal centrerad justering */
+    justify-content: left; /* Justera innehållet horisontellt */
+    flex-direction: row;
+    margin-top: 500px;
+    margin-left: 40px;
+}
+
+.customer {
+    display: flex;
+    flex-direction: column;
+    align-self: left;
+    padding: 30px; 
+    margin-left: 10px;
+}
+
+.plates {
+    display:flex;
+    flex-direction: row;
+    padding: 10px; 
+    margin-left: 10px;
+    align-items: flex-start;
+}
+
+.platesimg{
+    object-fit: contain; 
+    z-index: 3;
+    padding: 10px;
+}
+
 @media (max-width: 768px) {
     .headline {
         font-size: 30px; 
