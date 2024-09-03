@@ -153,26 +153,28 @@ body {
     margin-left: 40px;
 }
 
-.customer {
+.menu {
     display: flex;
     flex-direction: column;
-    align-self: left;
+    align-self: right;
     padding: 30px; 
     margin-left: 10px;
+  
 }
 
 .plates {
-    display:flex;
+    display: flex;
     flex-direction: row;
     padding: 10px; 
     margin-left: 10px;
-    align-items: flex-start;
+    margin-top: -150px;
 }
 
 .platesimg{
-    object-fit: contain; 
-    z-index: 3;
+    width: auto;
+    height: 500px;
     padding: 10px;
+    margin-left: 10px;
 }
 
 @media (max-width: 768px) {
