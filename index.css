@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inder', sans-serif;
 }
 
 
@@ -107,6 +107,17 @@ body {
     max-width:500px; 
 }
 
+.btn-yellow {
+    color: white;
+    background-color: #FFD707;
+    border: none;
+    border-radius: 5px;
+    height: auto;
+    width: 130px;
+    font-family:5inder;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 @media (max-width: 768px) {
     .headline {
         font-size: 30px; 
