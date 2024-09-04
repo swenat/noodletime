@@ -33,4 +33,54 @@
 		background-color: #F6A317;
 	}
 
+	.relative {
+		position: relative;
+	}
 	
+	.absolute {
+		position: absolute;
+	}
+	
+	.z-30 {
+		z-index: 30;
+	}
+	
+	.w-full {
+		width: 100%;
+	}
+	
+	.h-auto {
+		height: auto;
+	}
+	
+	/* Utility classes for transform and centering */
+	.transform {
+		transform: translateX(-50%) translateY(-50%);
+	}
+
+	h1.font-pacifico {
+		font-size: 28px; /* Default for desktop */
+	}
+	
+	h2.font-inder {
+		font-size: 22px; /* Default for desktop */
+	}
+	
+	p.font-oxygen {
+		font-size: 16px; /* Default for desktop */
+	}
+	
+	/* Media Queries for Mobile */
+	@media (max-width: 768px) {
+		h1.font-pacifico {
+			font-size: 20px; /* Smaller size for mobile */
+		}
+		
+		h2.font-inder {
+			font-size: 16px; /* Smaller size for mobile */
+		}
+	
+		p.font-oxygen {
+			font-size: 12px; /* Smaller size for mobile */
+		}
+	}
