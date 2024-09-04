@@ -3,33 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inder&display=swap"> 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap">
     <title>Noodletime</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inder&family=Oxygen&display=swap" rel="stylesheet">
+  
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Inder&family=Oxygen&display=swap');
+        /* Custom Tailwind config */
+        html {
+            font-family: 'Oxygen', sans-serif;
+        }
+        .font-pacifico {
+            font-family: 'Pacifico', cursive;
+        }
+        .font-inder {
+            font-family: 'Inder', sans-serif;
+        }
+    </style>
 </head>
-<body>
-    <div class="Upperpart">
-        <nav class="navbar">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#reviews">Reviews</a></li>
-                <li><a href="#contact">Contact us</a></li>
-                <li><a href="#search" class="icon-link"><img src="Images/searchicon.svg" alt="Search" class="icon"></a></li>
-                <li><a href="#cart" class="icon-link"><img src="Images/carticon.svg" alt="Cart" class="icon"></a></li>
+<body class="overflow-x-hidden">
+    <div class="relative flex flex-col items-center justify-center w-full">
+        <nav class="absolute top-0 w-full bg-transparent py-2 z-10">
+            <ul class="flex justify-end space-x-4 md:space-x-6 lg:space-x-8 pr-5">
+                <li><a href="#home" class="text-black text-lg hover:text-white">Home</a></li>
+                <li><a href="#about" class="text-black text-lg hover:text-white">About</a></li>
+                <li><a href="#menu" class="text-black text-lg hover:text-white">Menu</a></li>
+                <li><a href="#reviews" class="text-black text-lg hover:text-white">Reviews</a></li>
+                <li><a href="#contact" class="text-black text-lg hover:text-white">Contact us</a></li>
+                <li><a href="#search" class="ml-4"><img src="Images/searchicon.svg" alt="Search" class="w-6 h-auto inline-block"></a></li>
+                <li><a href="#cart" class="ml-4"><img src="Images/carticon.svg" alt="Cart" class="w-6 h-auto inline-block"></a></li>
             </ul>
         </nav>
-        <div class="headlinebody">
-        <h1 class="headline">Serving <span class="highlight">joy</span> <br> one bowl at a time</h1>
-        <p class="body-text">
+        <div class="absolute top-10 left-5 z-20 text-left p-6 text-black">
+        <h1 class="text-3xl lg:text-4xl font-pacifico mb-4">Serving <span class="text-yellow-400">joy</span> <br> one bowl at a time</h1>
+        <p class="font-inder text-base lg:text-lg max-w-md mb-4">
             Our dishes are packed with fresh, vibrant noodle soups inspired by global cuisines. Whether you crave something spicy, comforting, or light, we've got the perfect dish to satisfy you.
         </p>
-    <button class="btn" id="btn-yellow">Order here</button></div>
+    <button class="bg-yellow-400 text-white rounded py-2 px-4" id="btn-yellow">Order here</button></div>
         <div class="image-content">
-            <img src="Images/Yellowupperwithplate.png" alt="Yellowupperwithplate" class="upperpartyellow">
+            <img src="Images/Yellowupperwithplate.png" alt="Yellowupperwithplate" class="w-full h-auto">
         </div>
     </div>
     <div class="middlepart">
