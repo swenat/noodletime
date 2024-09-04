@@ -1,74 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noodletime</title>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inder&family=Oxygen&display=swap" rel="stylesheet">
-  
-    <script src="https://cdn.tailwindcss.com"></script>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Noodletime</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inder&family=Oxygen&display=swap"
+			rel="stylesheet"
+		/>
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Inder&family=Oxygen&display=swap');
-        /* Custom Tailwind config */
-        html {
-            font-family: 'Oxygen', sans-serif;
-        }
-        .font-pacifico {
-            font-family: 'Pacifico', cursive;
-        }
-        .font-inder {
-            font-family: 'Inder', sans-serif;
-        }
-    </style>
+		<script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="overflow-x-hidden">
-    <div class="relative flex flex-col items-center justify-center w-full">
-        <nav class="absolute top-0 w-full bg-transparent py-2 z-10">
-            <ul class="flex justify-end space-x-4 md:space-x-6 lg:space-x-8 pr-5">
-                <li><a href="#home" class="text-black text-lg hover:text-white">Home</a></li>
-                <li><a href="#about" class="text-black text-lg hover:text-white">About</a></li>
-                <li><a href="#menu" class="text-black text-lg hover:text-white">Menu</a></li>
-                <li><a href="#reviews" class="text-black text-lg hover:text-white">Reviews</a></li>
-                <li><a href="#contact" class="text-black text-lg hover:text-white">Contact us</a></li>
-                <li><a href="#search" class="ml-4"><img src="Images/searchicon.svg" alt="Search" class="w-6 h-auto inline-block"></a></li>
-                <li><a href="#cart" class="ml-4"><img src="Images/carticon.svg" alt="Cart" class="w-6 h-auto inline-block"></a></li>
-            </ul>
-        </nav>
-        <div class="absolute top-10 left-5 z-20 text-left p-6 text-black">
-        <h1 class="text-3xl lg:text-4xl font-pacifico mb-4">Serving <span class="text-yellow-400">joy</span> <br> one bowl at a time</h1>
-        <p class="font-inder text-base lg:text-lg max-w-md mb-4">
-            Our dishes are packed with fresh, vibrant noodle soups inspired by global cuisines. Whether you crave something spicy, comforting, or light, we've got the perfect dish to satisfy you.
-        </p>
-    <button class="bg-yellow-400 text-white rounded py-2 px-4" id="btn-yellow">Order here</button></div>
-        <div class="image-content">
-            <img src="Images/Yellowupperwithplate.png" alt="Yellowupperwithplate" class="w-full h-auto">
-        </div>
-    </div>
-    <div class="middlepart">
-        <img src="Images/Platebrownyellowbkr.png" alt="brownplate" class="brownplate-image">
-        <div class="middlepart-text">
-         <h2>About us</h2>
-        <p class="body-text">
-            NoodleTime was born out of a late-night craving in a small kitchen, where two friends experimented with noodle recipes from around the world. What started as a hobby quickly grew into a passion for creating the perfect bowl of soup, blending unique flavors and fresh ingredients. Fueled by their love for food and the joy of sharing it, they opened NoodleTime to bring their creations to life. Today, it's a place...
-        </p>
-        <button class="btn" id="btn-red">Read all</button>
-      
-    </div>
-   
-    </div>
-    <img src="Images/StripesYellow.png" alt=""> 
-    <div class="plates">
-        <img src="Images/Platesorange.png" alt="Plateorangecirklelarge" class="platesimg">
-        <div class="menu">
-        <h2>Explore our menu</h2>
-        <p class="body-text">
-            Explore our menu and discover a world of noodle soups crafted with love and creativity. Each dish is a unique blend of fresh ingredients, bold flavors, and comforting warmth, inspired by culinary traditions from across the globe. Whether you're looking for something spicy, savory, or light, there's a perfect bowl waiting for you at NoodleTime.
-        </p>  
-       
-    </div>
-    </div>
-    
-  
-</body>
+	<body class="overflow-x-hidden">
+		<div class="relative flex flex-col items-center justify-center w-full">
+			<nav class="absolute top-0 w-full bg-transparent py-2 z-10">
+				<ul class="flex justify-end space-x-4 md:space-x-6 lg:space-x-8 pr-5">
+					<li>
+						<a href="#home" class="text-black text-lg hover:text-white">Home</a>
+					</li>
+					<li>
+						<a href="#about" class="text-black text-lg hover:text-white"
+							>About</a
+						>
+					</li>
+					<li>
+						<a href="#menu" class="text-black text-lg hover:text-white">Menu</a>
+					</li>
+					<li>
+						<a href="#reviews" class="text-black text-lg hover:text-white"
+							>Reviews</a
+						>
+					</li>
+					<li>
+						<a href="#contact" class="text-black text-lg hover:text-white"
+							>Contact us</a
+						>
+					</li>
+					<li>
+						<a href="#search" class="icon-link"
+							><img
+								src="Images/searchicon.svg"
+								alt="Search"
+								class="w-6 h-auto inline-block"
+						/></a>
+					</li>
+					<li>
+						<a href="#cart" class="icon-link"
+							><img
+								src="Images/carticon.svg"
+								alt="Cart"
+								class="w-6 h-auto inline-block"
+						/></a>
+					</li>
+				</ul>
+			</nav>
+			<div class="absolute top-10 left-5 z-20 text-left p-6 text-black">
+				<h1 class="text-3xl lg:text-4xl font-pacifico mb-4">
+					Serving <span class="text-yellow-400">joy</span> <br />
+					one bowl at a time
+				</h1>
+				<p class="font-inder text-base lg:text-lg max-w-md mb-4">
+					Our dishes are packed with fresh, vibrant noodle soups inspired by
+					global cuisines. Whether you crave something spicy, comforting, or
+					light, we've got the perfect dish to satisfy you.
+				</p>
+				<button
+					class="bg-yellow-400 text-white rounded py-2 px-4"
+					id="btn-yellow"
+				>
+					Order here
+				</button>
+			</div>
+			<div class="image-content">
+				<img
+					src="Images/Yellowupperwithplate.png"
+					alt="Yellowupperwithplate"
+					class="w-full h-auto"
+				/>
+			</div>
+		</div>
+		<div class="flex flex-col md:flex-row items-center justify-center my-24">
+			<img
+				src="Images/Platebrownyellowbkr.png"
+				alt="brownplate"
+				class="w-full md:w-1/2 h-auto mb-4 md:mb-0 md:mr-6"
+			/>
+			<div class="text-left p-6 md:w-1/2">
+				<h2 class="text-2xl lg:text-3xl font-pacifico mb-4">About us</h2>
+				<p class="font-inder text-base lg:text-lg mb-4">
+					NoodleTime was born out of a late-night craving in a small kitchen,
+					where two friends experimented with noodle recipes from around the
+					world. What started as a hobby quickly grew into a passion for
+					creating the perfect bowl of soup, blending unique flavors and fresh
+					ingredients. Fueled by their love for food and the joy of sharing it,
+					they opened NoodleTime to bring their creations to life. Today, it's a
+					place...
+				</p>
+				<button class="btn btn-red">
+					Read all
+				</button>
+			</div>
+		</div>
+
+		<img src="Images/StripesYellow.png" alt="" />
+		<div class="flex flex-col md:flex-row items-center justify-center mt-12 p-2">
+			<img
+				src="Images/Platesorange.png"
+				alt="Plateorangecirklelarge"
+				class="w-full md:w-1/2 h-auto mb-4 md:mb-0 md:mr-6"
+			/>
+			<div class="text-left p-6 md:w-1/2">
+				<h2 class="text-2xl lg:text-3xl font-pacifico mb-4">
+					Explore our menu
+				</h2>
+				<p class="font-inder text-base lg:text-lg mb-4">
+					Explore our menu and discover a world of noodle soups crafted with
+					love and creativity. Each dish is a unique blend of fresh ingredients,
+					bold flavors, and comforting warmth, inspired by culinary traditions
+					from across the globe. Whether you're looking for something spicy,
+					savory, or light, there's a perfect bowl waiting for you at
+					NoodleTime.
+				</p>
+                <button class="btn btn-orange">
+					View menu
+				</button>
+			</div>
+		</div>
+	</body>
 </html>

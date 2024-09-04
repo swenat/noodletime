@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Inder&family=Oxygen&display=swap");
+			/* Custom Tailwind config */
+			html {
+				font-family: "Oxygen", sans-serif;
+			}
+			.font-pacifico {
+				font-family: "Pacifico", cursive;
+			}
+			.font-inder {
+				font-family: "Inder", sans-serif;
+			}
+
+            .icon-link:hover img {
+        filter: invert(100%);
+    }
+
+	.btn {
+		color: white;
+		padding: 10px 20px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		transition: transform 0.2s;
+		text-align: center;
+		display: inline-block;
+		cursor: pointer;
+		border-radius: 10;
+	}
+
+	.btn-red {
+		background-color: #E35D61;
+	}
+
+	.btn-orange {
+		background-color: #F6A317;
+	}
+
+	
