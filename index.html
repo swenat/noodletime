@@ -60,13 +60,13 @@
 					Serving <span class="text-yellow-400">joy</span> <br />
 					one bowl at a time
 				</h1>
-				<p class=" font-oxygen max-w-md mb-4">
-					Our dishes are packed with fresh, vibrant noodle soups inspired by
-					global cuisines. Whether you crave something spicy, comforting, or
-					light, we've got the perfect dish to satisfy you.
-				</p>
+                <div class="responsive-div">
+                    <p class="font-oxygen mb-4">
+                        Our dishes are packed with fresh, vibrant noodle soups inspired by global cuisines. Whether you crave something spicy, comforting, or light, we've got the perfect dish to satisfy you.
+                    </p>
+                </div>
 				<button
-					class="bg-yellow-400 text-white rounded py-2 px-4"
+					class="btn-yellow btn"
 					id="btn-yellow"
 				>
 					Order here
@@ -80,7 +80,7 @@
 				/>
 			</div>
 		</div>
-		<div class="flex flex-col md:flex-row items-center justify-center my-24">
+		<div class="flex flex-col md:flex-row items-center justify-center ">
 			<img
 				src="Images/Platebrownyellowbkr.png"
 				alt="brownplate"
@@ -121,32 +121,42 @@
 				</button>
 			</div>
 		</div>
-        <img src="Images/StripesYellow.png" alt="stripesyellow" />
+        
+        
         <div class="relative">
+            <img src="Images/StripesYellow.png" alt="stripesyellow" />
             <img src="Images/Yellowform.png" alt="yellowform" class="w-full h-auto" />
             <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex space-x-4 z-30">
                 <!-- Card 1 -->
-                <div class="bg-white shadow-lg rounded-lg p-6 max-w-xs w-full">
-                    <img src="Images/Foodimage1.png" alt="spicydragonbowl">
-                    <h2 class=" font-inder font-bold mb-2">Spicy Dragon Bowl</h3>
-                  <img src="Images/Starsreview.png" alt="starsreview" class="p-4">
-                    <button class="bg-yellow-400 font-oxygen text-white rounded py-4 px-4">Learn More</button>
+                <div class="bg-white shadow-lg rounded-lg p-6 w-full flex flex-col items-center">
+                    <img src="Images/Foodimage1.png" alt="spicydragonbowl"  class="w-280 h-auto object-cover mb-4">
+                    <h2 class=" font-inder font-bold mb-2 text-center">Spicy Dragon Bowl</h3>
+                  <img src="Images/Starsreview.png" alt="starsreview" class="p-4 m-2">
+                    <button class="text-white font-oxygen rounded py-2 px-4 btn-red sm:text-xs">Add to cart</button>
                 </div>
                 <!-- Card 2 -->
-                <div class="bg-white shadow-lg rounded-lg p-6 max-w-xs w-full">
-                    <img src="Images/Foodimage2.png" alt="shiitakeserenity">
-                    <h2 class="font-inder font-bold mb-2">Shiitake Serenity</h3>
-                    
-                    <button class="bg-yellow-400 font-oxygen text-white rounded py-2 px-4">Learn More</button>
+                <div class="bg-white shadow-lg rounded-lg p-6 w-full flex flex-col items-center">
+                    <img src="Images/Foodimage2.png" alt="shiitakeserenity" class="w-280 h-auto object-cover mb-4">
+                    <h2 class="font-inder font-bold mb-2 text-center">Shiitake Serenity</h3>
+                        <img src="Images/Starsreview.png" alt="starsreview" class="p-4 m-2">
+                    <button class="text-white font-oxygen rounded py-2 px-4 btn-red sm:text-xs">Add to cart</button>
                 </div>
                 <!-- Card 3 -->
-                <div class="bg-white shadow-lg rounded-lg p-6 max-w-xs w-full">
-                    <img src="Images/Foodimage3.png" alt="coconutcurrybliss">
-                    <h2 class="font-inder font-bold mb-2">Coconut Curry bliss</h3>
-                    
-                    <button class="bg-yellow-400 text-white font-oxygen rounded py-2 px-4">Learn More</button>
+                <div class="bg-white shadow-lg rounded-lg p-6 w-full flex flex-col items-center">
+                    <img src="Images/Foodimage3.png" alt="coconutcurrybliss" class="w-280 h-auto object-cover mb-4">
+                    <h2 class="font-inder font-bold mb-2 text-center">Coconut Curry bliss</h3>
+                        <img src="Images/Starsreview.png" alt="starsreview" class="p-4 m-2 sm: p-2 w-full h-auto">
+                    <button class="text-white font-oxygen rounded py-2 px-4 btn-red sm:text-xs">Add to cart</button>
                 </div>
-            </div>
+               
+            </div> <p class="font-oxygen mb-4 z-30">
+                    Explore our menu and discover a world of noodle soups crafted with
+                    love and creativity. Each dish is a unique blend of fresh ingredients,
+                    bold flavors, and comforting warmth, inspired by culinary traditions
+                    from across the globe. Whether you're looking for something spicy,
+                    savory, or light, there's a perfect bowl waiting for you at
+                    NoodleTime.
+                </p>
         </div>  
 	</body>
 </html>

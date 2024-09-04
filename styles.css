@@ -33,6 +33,11 @@
 		background-color: #F6A317;
 	}
 
+	.btn-yellow {
+		background-color: #FFD707;
+	}
+
+
 	.relative {
 		position: relative;
 	}
@@ -63,15 +68,26 @@
 	}
 	
 	h2.font-inder {
-		font-size: 22px; /* Default for desktop */
+		font-size: 24px; /* Default for desktop */
 	}
 	
 	p.font-oxygen {
 		font-size: 16px; /* Default for desktop */
 	}
 	
+	.custom-card-width {
+		max-width: 900px; /* Adjust this value as needed */
+	}
+
+	.responsive-div {
+		width: 350px; /* Initial width */
+		max-width: 100%; /* Responsive width, adjusts on smaller screens */
+		overflow-wrap: break-word; /* Ensure text breaks within the div */
+	}
+
 	/* Media Queries for Mobile */
-	@media (max-width: 768px) {
+	@media (max-width: 640px) {
+
 		h1.font-pacifico {
 			font-size: 20px; /* Smaller size for mobile */
 		}
@@ -82,5 +98,15 @@
 	
 		p.font-oxygen {
 			font-size: 12px; /* Smaller size for mobile */
+		}
+
+		.btn {
+			padding: 6px 12px; /* Reduce padding */
+			font-size: 10px; /* Smaller font size */
+		}
+
+		.responsive-div {
+			width: auto; /* Allow width to adjust for mobile screens */
+			max-width: 150px; /* Ensure it doesn't exceed 50px on mobile */
 		}
 	}
