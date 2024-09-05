@@ -175,6 +175,15 @@
 		color: white;
 	}
 
+	.overlay-container {
+		background-color: #F6A317;
+		color: white;
+		padding: 24px;
+		border-radius: 8px;
+		border: 3px solid white;
+		max-width: 500px; /* Adjust as needed */
+	}
+
 	/* Media Queries for Mobile */
 	@media (max-width: 640px) {
 
@@ -256,6 +265,8 @@
 			text-align: center;
 			
 		}
-		
+		.overlay-container{
+			margin-left: 0;
+		}
 
 	}
