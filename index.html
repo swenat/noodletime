@@ -14,51 +14,45 @@
         <script src="https://cdn.tailwindcss.com"></script>
 </head>
 	<body class="overflow-x-hidden">
-       
-		<div class="relative flex flex-col items-center justify-center w-full mt-0">
-			<nav class="absolute top-0 w-full bg-transparent py-1 z-10 md:mt-0">
-				<ul class="flex justify-end space-x-4 md:space-x-6 lg:space-x-8 pr-5">
-					<li>
-						<a href="#home" class="text-black font-inder hover:text-white">Home</a>
-					</li>
-					<li>
-						<a href="#about" class="text-black font-inder hover:text-white"
-							>About</a
-						>
-					</li>
-					<li>
-						<a href="#menu" class="text-black font-inder hover:text-white">Menu</a>
-					</li>
-					<li>
-						<a href="#reviews" class="text-black font-inder hover:text-white"
-							>Reviews</a
-						>
-					</li>
-					<li>
-						<a href="#contact" class="text-black font-inder hover:text-white"
-							>Contact us</a
-						>
-					</li>
-					<li>
-						<a href="#search" class="icon-link"
-							><img
-								src="Images/searchicon.svg"
-								alt="Search"
-								class="w-6 h-auto inline-block"
-						/></a>
-					</li>
-					<li>
-						<a href="#cart" class="icon-link"
-							><img
-								src="Images/carticon.svg"
-								alt="Cart"
-								class="w-6 h-auto inline-block"
-						/></a>
-					</li>
-				</ul>
-			</nav>
-			<div class="absolute top-10 left-5 z-20 text-left p-6 text-black">
-				<h1 class=" font-pacifico mb-4">
+        <nav class="bg-transparent py-4 absolute top-0 left-0 w-full z-10 pb-10">
+            <div class="container mx-auto flex justify-between items-center p-2  mb-10 ml-2">
+                <div class="text-black font-pacifico text-2xl">
+                    <img src="Images/Logoplate.svg" alt="">
+                </div>
+        
+                <!-- Hamburger Icon for Mobile -->
+                <div class="block md:hidden">
+                    <button id="hamburger" class="focus:outline-none mr-2 mt-2 pt-2">
+                        <div class="w-6 h-1 bg-black mb-1"></div>
+                        <div class="w-6 h-1 bg-black mb-1"></div>
+                        <div class="w-6 h-1 bg-black"></div>
+                    </button>
+                </div>
+        
+                <!-- Navigation Links -->
+                <ul id="nav-links" class="hidden md:flex space-x-4">
+                    <li><a href="#home" class="text-black font-inder hover:text-white">Home</a></li>
+                    <li><a href="#about" class="text-black font-inder hover:text-white">About</a></li>
+                    <li><a href="#menu" class="text-black font-inder hover:text-white">Menu</a></li>
+                    <li><a href="#reviews" class="text-black font-inder hover:text-white">Reviews</a></li>
+                    <li><a href="#contact" class="text-black font-inder hover:text-white">Contact us</a></li>
+                    <li><a href="#search" class="icon-link"><img src="Images/searchicon.svg" alt="Search" class="w-6 h-auto inline-block"/></a></li>
+                    <li><a href="#cart" class="icon-link"><img src="Images/carticon.svg" alt="Cart" class="w-6 h-auto inline-block"/></a></li>
+                </ul>
+            </div>
+        
+            <!-- Mobile Navigation Links -->
+            <ul id="mobile-nav" class="md:hidden hidden flex flex-col space-y-4 mt-4">
+                <li><a href="#home" class="text-black font-inder">Home</a></li>
+                <li><a href="#about" class="text-black font-inder">About</a></li>
+                <li><a href="#menu" class="text-black font-inder">Menu</a></li>
+                <li><a href="#reviews" class="text-black font-inder">Reviews</a></li>
+                <li><a href="#contact" class="text-black font-inder">Contact us</a></li>
+            </ul>
+        </nav>
+
+			<div class="absolute m-20 top-0  z-20 text-left p-6 text-black md: m-25 ml-0 p-2">
+				<h1 class=" font-pacifico mb-4 mt-20">
 					Serving <span class="text-yellow-400">joy</span> <br />
 					one bowl at a time
 				</h1>
@@ -68,7 +62,7 @@
                     </p>
                 </div>
 				<button
-					class="btn-yellow btn"
+					class="btn-yellow btn mb-5"
 					id="btn-yellow"
 				>
 					Order here
@@ -78,7 +72,7 @@
 				<img
 					src="Images/Yellowupperwithplate.png"
 					alt="Yellowupperwithplate"
-					class="w-full h-auto mt-0"
+					class="w-full h-auto mt-0 img-yellow"
 				/>
 			</div>
 		</div>
@@ -89,7 +83,7 @@
 				class="responsive-image mb-4 md:mb-0 mr-6 "
 			/>
 			<div class="text-left p-6 md:w-1/2">
-				<h2 class="font-inder mb-4">About us</h2>
+				<h2 class="font-inder mb-4 mt-4">About us</h2>
 				<p class="font-oxygen mb-4">
 					NoodleTime was born out of a late-night craving in a small kitchen, where two friends experimented with noodle recipes from around the world. What started as a hobby quickly grew into a passion for creating the perfect bowl of soup, blending unique flavors and fresh ingredients. Fueled by their love for food and the joy of sharing it,they opened NoodleTime to bring their creations to life. Today, it's a place...
 				</p>
@@ -270,6 +264,13 @@
             </div>
         </div>
     </footer>
-    
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const mobileNav = document.getElementById('mobile-nav');
+
+        hamburger.addEventListener('click', () => {
+            mobileNav.classList.toggle('hidden');
+        });
+    </script>
 	</body>
 </html>

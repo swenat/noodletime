@@ -228,6 +228,24 @@ p.font-oxygen {
 	max-width: 500px; /* Adjust as needed */
 }
 
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10; /* Säkerställer att navbaren ligger ovanför andra element */
+}
+
+.image-content {
+    margin-top: 0; /* Ser till att bilden inte får någon extra marginal ovanför */
+}
+
+.img-yellow {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 /* Media Queries for Mobile */
 @media (max-width: 640px) {
 	h1.font-pacifico {
@@ -242,6 +260,10 @@ p.font-oxygen {
 		font-size: 12px;
 	}
 
+	.logo {
+		width: 50%;
+		height:auto;
+	}
 	.btn {
 		padding: 4px 8px;
 		font-size: 10px;
