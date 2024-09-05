@@ -172,7 +172,7 @@
 	}
 	
 	.footer-links a:hover {
-		text-decoration: underline;
+		color: white;
 	}
 
 	/* Media Queries for Mobile */
@@ -236,7 +236,25 @@
 		}
 
 		.footer-column {
-			width: 24%;
+			width: 100%;
+			max-width: none;
+			margin-bottom: 20px;
+			text-align: center;
+			align-items: center;
+			flex-direction: column;
+			
+		}
+
+		.footer-links a {
+			font-size: 12px;
+			align-items: center;
+			flex-direction: column;
+		}
+	
+		.footer {
+			padding: 10px;
+			text-align: center;
+			
 		}
 		
 
