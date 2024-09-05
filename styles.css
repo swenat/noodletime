@@ -225,12 +225,13 @@
 	
 		/* Lägga till mer utrymme mellan korten */
 		.relative > .flex > div {
-			margin-bottom: 20px; /* Justera mellanrum mellan korten */
+			margin-bottom: 20px;
+			padding: 5px; /* Justera mellanrum mellan korten */
 		}
 	
 		/* Justera kortbredd för att passa mobilskärmar */
 		.relative > .flex > div {
-			width: 100%;
+			width: 150px;
 			height: auto; 
 		}
 	
