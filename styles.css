@@ -58,55 +58,153 @@
 		height: auto;
 	}
 	
-	/* Utility classes for transform and centering */
+	
 	.transform {
 		transform: translateX(-50%) translateY(-50%);
 	}
 
 	h1.font-pacifico {
-		font-size: 28px; /* Default for desktop */
+		font-size: 30px; 
 	}
 	
 	h2.font-inder {
-		font-size: 24px; /* Default for desktop */
+		font-size: 24px; 
 	}
 	
 	p.font-oxygen {
-		font-size: 16px; /* Default for desktop */
+		font-size: 16px; 
 	}
 	
 	.custom-card-width {
-		max-width: 900px; /* Adjust this value as needed */
+		max-width: 900px; 
 	}
 
 	.responsive-div {
-		width: 350px; /* Initial width */
-		max-width: 100%; /* Responsive width, adjusts on smaller screens */
-		overflow-wrap: break-word; /* Ensure text breaks within the div */
+		width: 350px; 
+		max-width: 100%; 
+		overflow-wrap: break-word; 
 	}
+
+	.responsive-image {
+		width: 100%;
+		max-width: 400px; 
+		height: auto; 
+	}
+
+	.card-offset {
+		position: relative;
+		top: -80px; 
+	
+	}
+
+	.relative > .flex > div {
+		margin-bottom: 60px; 
+		width: 90%;
+	}
+
+	.relative > .flex {
+		margin-top: 60px; 
+	}
+	
+	.contact-form-container {
+		background-color: #F6A317 !important;
+		padding: 24px;
+		border-radius: 8px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	}
+	
+	.contact-form-container h2 {
+		color: #E35D61; 
+	}
+	
+	.contact-form-container input {
+		border: none;
+		border-bottom: 2px solid #ccc;
+		padding: 8px 0;
+		margin-bottom: 16px;
+		width: 100%;
+		font-size: 16px;
+	}
+	
+	.contact-form-container input:focus {
+		border-bottom-color: #E35D61; 
+		outline: none;
+	}
+	
+	.contact-form-container button {
+		background-color: #E35D61;
+		color: #ffffff;
+		padding: 12px;
+		border-radius: 8px;
+		text-align: center;
+		cursor: pointer;
+		width: 100%;
+	}
+	
+	.contact-form-container button:hover {
+		background-color: #c44d52;
+	}
+	
 
 	/* Media Queries for Mobile */
 	@media (max-width: 640px) {
 
 		h1.font-pacifico {
-			font-size: 20px; /* Smaller size for mobile */
+			font-size: 25px;
 		}
 		
 		h2.font-inder {
-			font-size: 16px; /* Smaller size for mobile */
+			font-size: 16px; 
 		}
 	
 		p.font-oxygen {
-			font-size: 12px; /* Smaller size for mobile */
+			font-size: 12px; 
 		}
 
 		.btn {
-			padding: 6px 12px; /* Reduce padding */
-			font-size: 10px; /* Smaller font size */
+			padding: 4px 8px; 
+			font-size: 10px; 
 		}
 
 		.responsive-div {
-			width: auto; /* Allow width to adjust for mobile screens */
-			max-width: 150px; /* Ensure it doesn't exceed 50px on mobile */
+			width: 100%; 
+			margin-bottom: 20px;
 		}
+
+	    .card-offset {
+			top: 0;
+		}
+	
+		/* Lägga till mer utrymme mellan korten */
+		.relative > .flex > div {
+			margin-bottom: 20px; /* Justera mellanrum mellan korten */
+		}
+	
+		/* Justera kortbredd för att passa mobilskärmar */
+		.relative > .flex > div {
+			width: 100%;
+			height: auto; 
+		}
+	
+		.relative {
+			margin-top: 20px; 
+		}
+
+		.contact-form-container {
+			padding: 16px;
+		}
+		
+		.contact-form-container h2 {
+			font-size: 20px;
+		}
+		
+		.contact-form-container input {
+			font-size: 14px;
+		}
+		
+		.contact-form-container button {
+			padding: 10px;
+		}
+		
+
 	}
