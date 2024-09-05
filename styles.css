@@ -31,6 +31,8 @@ html {
 	display: inline-block;
 	cursor: pointer;
 	font-family: 'Oxygen';
+	margin-top: 5px;
+	
 }
 
 .btn-red {
@@ -48,7 +50,6 @@ html {
 	text-align: center;
 	display: inline-block;
 	cursor: pointer;
-	
 }
 
 .btn-orange {
