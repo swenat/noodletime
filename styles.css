@@ -2,6 +2,7 @@
 			/* Custom Tailwind config */
 			html {
 				font-family: "Oxygen", sans-serif;
+	
 			}
 			.font-pacifico {
 				font-family: "Pacifico", cursive;
@@ -109,7 +110,7 @@
 	}
 
 	.relative > .flex {
-		margin-top: 60px; 
+		margin-top: 50px; 
 	}
 	
 	.contact-form-container {
@@ -117,10 +118,11 @@
 		padding: 24px;
 		border-radius: 8px;
 		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		border: 3px solid #FFD707;
 	}
 	
 	.contact-form-container h2 {
-		color: #E35D61; 
+		color: #ffffff; 
 	}
 	
 	.contact-form-container input {
@@ -145,6 +147,7 @@
 		text-align: center;
 		cursor: pointer;
 		width: 100%;
+		
 	}
 	
 	.contact-form-container button:hover {
@@ -215,6 +218,7 @@
 			margin-bottom: 20px;
 		}
 
+
 	    .card-offset {
 			top: 0;
 		}
@@ -231,11 +235,13 @@
 		}
 	
 		.relative {
-			margin-top: 20px; 
+			margin-top: 0; 
 		}
 
 		.contact-form-container {
 			padding: 16px;
+			margin-left: 10px;
+			margin-right: 10px;
 		}
 		
 		.contact-form-container h2 {
@@ -243,7 +249,7 @@
 		}
 		
 		.contact-form-container input {
-			font-size: 14px;
+			font-size: 14px
 		}
 		
 		.contact-form-container button {
@@ -279,9 +285,10 @@
 			height: auto;
 		}
 		.responsive-image {
-			width: 40%;
+			width: 30%;
 			max-width: 400px; 
 			height: auto; 
+			
 		}	
 	
 
